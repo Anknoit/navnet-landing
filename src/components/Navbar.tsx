@@ -30,6 +30,8 @@ const Navbar: React.FC = () => {
             <span className="ml-2 text-xl font-bold text-white">NAVNET</span>
           </div>
 
+
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-300 hover:text-primary-500 transition-colors">Features</a>
