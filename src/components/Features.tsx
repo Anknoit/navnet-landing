@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Shield, Activity, BarChart, Zap, Eye, Clock } from 'lucide-react';
+import look from "../images/First_look.png"
 
 interface FeatureProps {
   icon: React.ReactNode;
@@ -93,10 +94,12 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-dark-900">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="features" className="py-15 bg-dark-900">
+      <div className="container mx-auto px-4 md:px-6 py-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <img src={look}
+            className="mx-auto max-w-full h-auto rounded-lg shadow-lg mb-4"/>
+          <h2 className="py-10 text-3xl md:text-4xl font-bold text-white m-4 mb-4">
             Advanced Network Fault Detection
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
