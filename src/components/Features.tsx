@@ -58,7 +58,7 @@ const Features: React.FC = () => {
     {
       icon: <Shield size={24} />,
       title: "Proactive Protection",
-      description: "Detect network issues before they impact your operations with our predictive fault analysis.",
+      description: "Detect network issues before they impact your operations with predictive fault analysis.",
       delay: 0.1
     },
     {
@@ -103,7 +103,7 @@ const Features: React.FC = () => {
             Advanced Network Fault Detection
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Our cutting-edge technology ensures your network remains reliable and operational at all times.
+            The cutting-edge technology ensures your network remains reliable and operational at all times.
           </p>
         </div>
         

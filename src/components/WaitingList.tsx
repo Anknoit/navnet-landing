@@ -51,24 +51,44 @@ const WaitingList: React.FC = () => {
     setFormState(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const response = await fetch("https://formspree.io/f/xovdbgpg", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: formState.name,
+        email: formState.email,
+        company: formState.company,
+        networkSize: formState.networkSize,
+        message: formState.message,
+      }),
+    });
+
+    if (response.ok) {
       setIsSubmitted(true);
-      // Reset form after successful submission
       setFormState({
-        name: '',
-        email: '',
-        company: '',
-        networkSize: '',
-        message: '',
+        name: "",
+        email: "",
+        company: "",
+        networkSize: "",
+        message: "",
       });
-    }, 1500);
-  };
+    } else {
+      console.error("Submission failed.");
+    }
+  } catch (err) {
+    console.error("Form error:", err);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section id="waiting-list" className="py-20 bg-dark-900 relative">

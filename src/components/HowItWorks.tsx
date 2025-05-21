@@ -65,7 +65,7 @@ const HowItWorks: React.FC = () => {
             How NAVNET Works
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Our advanced system uses AI and machine learning to keep your network running smoothly.
+            NavNet's advanced system uses AI and machine learning to keep your network running smoothly.
           </p>
         </div>
         
@@ -100,7 +100,7 @@ const HowItWorks: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-20 bg-dark-900 rounded-xl p-8 border border-dark-700">
+        {/* <div className="mt-20 bg-dark-900 rounded-xl p-8 border border-dark-700">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-4">
               <h4 className="text-5xl font-bold text-primary-500 mb-2">45%</h4>
@@ -115,7 +115,7 @@ const HowItWorks: React.FC = () => {
               <p className="text-gray-300">More Efficient IT Operations</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
