@@ -78,13 +78,13 @@ const Footer: React.FC = () => {
                 <span className="text-gray-400">+1 (555) 123-4567</span>
               </li> */}
                           <div className="flex space-x-4">
-              <a href="https://x.com/Anknoit" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://x.com/Anknoit" target="_blank" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Twitter size={30} />
               </a>
-              <a href="https://www.linkedin.com/in/ankit-jha-707825195/" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://www.linkedin.com/in/ankit-jha-707825195/" target="_blank" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Linkedin size={30} />
               </a>
-              <a href="https://github.com/Anknoit" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://github.com/Anknoit" target="_blank" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Github size={30} />
               </a>
             </div>
